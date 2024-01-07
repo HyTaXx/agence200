@@ -1,91 +1,79 @@
 'use client'
 import React, { useState } from 'react';
+import { Footer } from '../../components/footer/footer';
+import { Header } from '../../components/header/header';
 
-//All need to be redone
+const ContactForm = () => {
+ const [formData, setFormData] = useState({
+   name: '',
+   email: '',
+   message: ''
+ });
 
-function Contact() {
- const [name, setName] = useState("");
- const [email, setEmail] = useState("");
- const [message, setMessage] = useState("");
-
- const handleOnChange = (event) => {
-   const { id, value } = event.target;
-   switch (id) {
-     case 'name':
-       setName(value);
-       break;
-     case 'email':
-       setEmail(value);
-       break;
-     case 'message':
-       setMessage(value);
-       break;
-     default:
-       break;
-   }
+ const handleChange = (event) => {
+   setFormData({
+     ...formData,
+     [event.target.name]: event.target.value
+   });
  };
 
- const handleOnSubmit = (event) => {
+ const handleSubmit = (event) => {
    event.preventDefault();
-   console.log({ name, email, message });
+   console.log(formData);
+   // Here you would typically send the form data to a server
  };
 
  return (
-   <div className="flex flex-col items-center justify-center min-h-screen py-2">
-     <form
-       onSubmit={handleOnSubmit}
-       className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-     >
-       <div className="mb-4">
-         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-           Name
-         </label>
-         <input
-           id="name"
-           name="name"
-           value={name}
-           onChange={handleOnChange}
-           className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-         />
-       </div>
+    <section className='min-h-[100vh] bg-white text-black'>
+        <Header />
+        <section className='flex flex-col justify-center pb-16'>
+            <div className='flex flex-col justify-center py-16 gap-4'>
+                <h2 className='text-center text-3xl'>Contact us</h2>
+                <p className='text-center'>Get in touch with us. We're ready to help you find the best cybersecurity solutions.</p>
+            </div>
+            <section className='flex flex-row px-32'>
+                <form className='w-1/2 px-32 flex flex-col justify-around'>
+                    <div className='flex flex-col gap-2'>
+                        <label htmlFor='name'>Your Name</label>
+                        <input type='text' id='name' name='name' value={formData.name} onChange={handleChange} className='border-2 rounded-full border-black px-4 py-2' placeholder='Full Name' />
+                    </div>
+                    <div className='flex flex-col gap-2'>
+                        <label htmlFor='email'>Your Email</label>
+                        <input type='email' id='email' name='email' value={formData.email} onChange={handleChange} className='border-2 rounded-full border-black px-4 py-2' placeholder='youremail@example.com'/>
+                    </div>
+                    <div className='flex flex-col gap-2'>
+                        <label htmlFor='subject'>Subject</label>
+                        <input type='text' id='subject' name='subject' value={formData.subject} onChange={handleChange} className='border-2 rounded-full border-black px-4 py-2' placeholder='Telll us more about your needs' />
+                    </div>
+                    <div className='flex flex-col gap-2'>
+                        <label htmlFor='message'>Message</label>
+                        <textarea id='message' name='message' value={formData.message} onChange={handleChange} className='border-2 rounded-full border-black px-4 py-2' placeholder='Write your message here' />
+                    </div>
+                    <button type='submit' onClick={handleSubmit} className='bg-black text-white px-4 py-2 rounded-full'>Send Message</button>
+                </form>
+                <div className='w-1/2 flex justify-end px-32'>
+                    <img src='images/map_temp.jpg'/>
+                </div>
+            </section>
+            <div className='flex flex-row justify-around px-6 mx-64 my-32 py-32 bg-[#f0f0f0]'>
+                <div>
+                    <h3 className='text-3xl'>Call us</h3>
+                    <p>+33 00 00 00 00</p>
+                </div>
+                <div>
+                    <h3 className='text-3xl'>Email us</h3>
+                    <p>info@example.com</p>
+                    <p>info@example.com</p>
+                </div>
+                <div>
+                    <h3 className='text-3xl'>Visit Us</h3>
+                    <p>200 Agency</p>
+                </div>
+            </div>
+        </section>
+        <Footer />
+    </section>
+    );
+};
 
-       <div className="mb-4">
-         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-           Email
-         </label>
-         <input
-           id="email"
-           name="email"
-           value={email}
-           onChange={handleOnChange}
-           className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-         />
-       </div>
-
-       <div className="mb-6">
-         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-           Message
-         </label>
-         <textarea
-           id="message"
-           name="message"
-           value={message}
-           onChange={handleOnChange}
-           className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-         />
-       </div>
-
-       <div className="flex items-center justify-between">
-         <button
-           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-           type="submit"
-         >
-           Submit
-         </button>
-       </div>
-     </form>
-   </div>
- );
-}
-
-export default Contact;
+export default ContactForm;
