@@ -21,10 +21,10 @@ export const Header = () => {
               <img src="./images/close.png" alt="Close" width={30}/>
             </button>
             <ul className="flex flex-col gap-y-6 p-6 text-black md:flex-row md:gap-x-6 md:p-0 md:text-white md:ml-auto md:mr-auto">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Qui sommes-nous ?</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#" className="bg-[#EB5E28] rounded-full px-4 py-3 md:hidden">Nous contacter</a></li>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/about-us">Qui sommes-nous ?</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact" className="bg-[#EB5E28] rounded-full px-4 py-3 md:hidden">Nous contacter</a></li>
             </ul>
         </div>
         <div>

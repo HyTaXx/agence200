@@ -14,7 +14,7 @@ export const Hero = () => {
           <a href="#" className="bg-[#EB5E28] rounded-full py-3 w-[250px] text-white text-center">Nous contacter</a>
         </div>
         <div className="w-1/2">
-          <img src="./images/hero.svg" alt="Hero"/>
+          <img src="images/Hero.svg" alt="Hero"/>
         </div>
       </section>
     )
