@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) made for project agence 200.
+
+The project uses **tailwindcss**
 
 ## Getting Started
 
@@ -16,9 +18,13 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Main pages
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+| Page name    | `location              |
+| ------------ | ---------------------- |
+| Home page    | `app/page.js`.         |
+| Contact page | `app/contact/page.js`. |
+| Blog page    | `app/blog/page.js`.    |
 
 ## Learn More
 
@@ -36,4 +42,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 "# agence200"
 
-## PR before push
+## Pushing Protocol
+
+Make a branch `your-name-dev` then make a pullrequest to `dev`
+You will need **SOMEONE ELSE** to review and validate your files
+Then you will be able to merge your branch to the dev and delete your branch
