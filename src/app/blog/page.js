@@ -18,7 +18,6 @@ const BlogPage = () => {
             .get('articlev-2')
             .promise()
             .then(({ data }) => {
-                console.log(data);
                 setPosts(data.article);
             });
     }, []);
