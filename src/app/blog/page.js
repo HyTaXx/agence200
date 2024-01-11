@@ -36,12 +36,18 @@ const BlogPage = () => {
                         post={posts[selectedArticle]}
                     ></SingleArticle>
                     <div
-                        className="absolute top-10 right-10 bg-black w-10 h-10 hover:cursor-pointer"
+                        className="absolute top-10 right-10 w-10 h-10 hover:cursor-pointer"
                         onClick={(event) => {
                             event.preventDefault();
                             setSelectedArticle(null);
                         }}
-                    ></div>
+                    >
+                        <img
+                            src="/images/close_icon.png"
+                            alt="Close"
+                            className="w-full h-full"
+                        />
+                    </div>
                 </section>
             ) : (
                 <section className="p-16">
