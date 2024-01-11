@@ -1,6 +1,6 @@
 import React from 'react';
 
-const blog = ({ posts }) => {
+const blog = ({ posts, setSelectedArticleIndex }) => {
     return (
         <div className="grid grid-cols-3 gap-10">
             {posts.map((post, index) => (
@@ -30,6 +30,10 @@ const blog = ({ posts }) => {
                     <a
                         href="#"
                         className="block w-full text-center hover:underline"
+                        onClick={(event) => {
+                            event.preventDefault();
+                            setSelectedArticleIndex(index);
+                        }}
                     >
                         Read more ...
                     </a>
