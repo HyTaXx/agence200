@@ -25,6 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 | Home page    | `app/page.js`.         |
 | Contact page | `app/contact/page.js`. |
 | Blog page    | `app/blog/page.js`.    |
+| About page   | `app/about-us/page.js`.|
 
 ## Learn More
 
@@ -47,3 +48,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Make a branch `your-name-dev` then make a pullrequest to `dev`
 You will need **SOMEONE ELSE** to review and validate your files
 Then you will be able to merge your branch to the dev and delete your branch
+No direct push on main or dev will be allowed except for documentation or hotfix
