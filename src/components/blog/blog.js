@@ -15,7 +15,7 @@ const blog = ({ posts, setSelectedArticleIndex }) => {
                             className="w-full rounded-tl-lg rounded-tr-lg"
                         />
                         <div className="bg-[#EB5E28] p-2 rounded-xl absolute top-1 right-1">
-                            Category...
+                            Categorie...
                         </div>
                     </div>
                     <h1 className="font-semibold">
@@ -35,7 +35,7 @@ const blog = ({ posts, setSelectedArticleIndex }) => {
                             setSelectedArticleIndex(index);
                         }}
                     >
-                        Read more ...
+                        En voir plus...
                     </a>
                 </div>
             ))}
