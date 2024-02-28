@@ -30,7 +30,7 @@ const BlogPage = () => {
         <section className="bg-[#FFFCF2]">
             <Header />
             {selectedArticle ? (
-                <section className="p-16 relative">
+                <section className="p-16 relative text-black">
                     <SingleArticle
                         post={posts[selectedArticle]}
                     ></SingleArticle>
