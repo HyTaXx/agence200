@@ -49,7 +49,7 @@ const BlogPage = () => {
                     </div>
                 </section>
             ) : (
-                <section className="p-16">
+                <section className="p-16 text-black">
                     <h2 className="font-bold text-xl mb-10">Nos Articles:</h2>
                     <Blog
                         posts={posts}

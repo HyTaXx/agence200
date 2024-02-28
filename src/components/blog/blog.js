@@ -6,7 +6,7 @@ const blog = ({ posts, setSelectedArticleIndex }) => {
             {posts.map((post, index) => (
                 <div
                     key={index}
-                    className="rounded-xl p-4  shadow-2xl bg-[#FFFCF2] relative"
+                    className="rounded-xl p-4 shadow-2xl bg-[#FFFCF2] relative justify-between flex flex-col"
                 >
                     <div className="border-b-[#EB5E28] border-b-solid border-b-2 ">
                         <img
