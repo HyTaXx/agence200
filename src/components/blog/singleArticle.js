@@ -23,7 +23,7 @@ const singleArticle = ({ post }) => {
                 )
             )}
             <div className="mt-10">
-                <p className="text-right">Author : Mr. Jack</p>
+                <p className="text-right">Auteur : Mr. Jack</p>
             </div>
         </div>
     );

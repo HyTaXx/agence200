@@ -24,9 +24,9 @@ export const Footer = () => {
                 <a href="#">Mentions légales</a>
             </div>
             <div className="flex flex-col gap-4 justify-center">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Linkedin</a>
+                <a href="https://www.instagram.com/200agency/">Instagram</a>
+                {/* <a href="#">Facebook</a> @TODO Create a facebook page */}
+                <a href="https://www.linkedin.com/company/agenceweb200/about/">Linkedin</a>
             </div>
             <button onClick={scrollToTop}>
                 <img src="images/go_up.svg"></img>

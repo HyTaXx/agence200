@@ -33,7 +33,7 @@ export const Home_main = () => {
                     <img src="images/icon_home_join2.svg" className="max-w-[70%] my-16"/>
                     <h2 className="text-5xl font-medium">Rejoins La Famille !</h2>
                     <p className="max-w-[500px] leading-10">Envie d'échanger sur le digital en bonne compagnie ? Viens, on t'attend !</p>
-                    <Main_button text="Nous découvrir" href="/about_us" />
+                    <Main_button text="Nous découvrir" href="/about-us" />
                     {/* Need to add arrow toward button */}
                 </div>
                 <div className="w-[40%] flex text-black flex-col justify-center">
