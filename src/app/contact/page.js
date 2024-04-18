@@ -96,7 +96,7 @@ const ContactForm = () => {
                         </div>
                         <button
                             type="submit"
-                            className="bg-black text-white px-4 py-2 rounded-full"
+                            className="bg-black text-white px-4 py-2 rounded-full my-4"
                         >
                             Send Message
                         </button>
@@ -112,8 +112,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                         <h3 className="text-3xl">Email us</h3>
-                        <p>info@example.com</p>
-                        <p>info@example.com</p>
+                        <p>contactagence200@gmail.com</p>
                     </div>
                     <div>
                         <h3 className="text-3xl">Visit Us</h3>
