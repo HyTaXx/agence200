@@ -12,7 +12,7 @@ const blog = ({ posts, setSelectedArticleIndex }) => {
                         <img
                             src={post.article.image}
                             alt={post.article.title.content}
-                            className="w-full rounded-tl-lg rounded-tr-lg"
+                            className="w-full rounded-tl-lg rounded-tr-lg aspect-video object-cover"
                         />
                         <div className="bg-[#EB5E28] p-2 rounded-xl absolute top-1 right-1">
                             Categorie...
