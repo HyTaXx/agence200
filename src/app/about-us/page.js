@@ -75,7 +75,7 @@ const AboutUs = () => {
                             alt="Membre de l'équipe 1"
                             className="w-32 h-32 rounded-full mb-2"
                         />
-                        <p className="text-lg">Wissem - com</p>
+                        <p className="text-lg">Wissam - com</p>
                     </div>
                 </section>
             </main>
