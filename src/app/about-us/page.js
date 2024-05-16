@@ -71,7 +71,7 @@ const AboutUs = () => {
                     </div>
                     <div className="flex flex-col items-center">
                         <img
-                            src="images/team/photo7.jpg"
+                            src="images/team/photo7.png"
                             alt="Membre de l'équipe 1"
                             className="w-32 h-32 rounded-full mb-2"
                         />
