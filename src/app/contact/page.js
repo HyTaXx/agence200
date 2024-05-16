@@ -36,10 +36,11 @@ const ContactForm = () => {
             <Header />
             <section className="flex flex-col justify-center pb-16">
                 <div className="flex flex-col justify-center py-16 gap-4">
-                    <h2 className="text-center text-3xl">Contact us</h2>
+                    <h2 className="text-center text-3xl">Nous contacter</h2>
                     <p className="text-center">
-                        Get in touch with us. We're ready to help you find the
-                        best cybersecurity solutions.
+                        Countactez nous pour plus d'informations. Nous sommes
+                        prêts à vous aider à trouver les meilleures solutions de
+                        cybersécurité.
                     </p>
                 </div>
                 <section className="flex flex-row px-32">
@@ -48,7 +49,7 @@ const ContactForm = () => {
                         onSubmit={handleSubmit}
                     >
                         <div className="flex flex-col gap-2">
-                            <label htmlFor="name">Your Name</label>
+                            <label htmlFor="name">Nom</label>
                             <input
                                 type="text"
                                 id="name"
@@ -60,7 +61,7 @@ const ContactForm = () => {
                             />
                         </div>
                         <div className="flex flex-col gap-2">
-                            <label htmlFor="email">Your Email</label>
+                            <label htmlFor="email">Email</label>
                             <input
                                 type="email"
                                 id="email"
@@ -72,7 +73,7 @@ const ContactForm = () => {
                             />
                         </div>
                         <div className="flex flex-col gap-2">
-                            <label htmlFor="subject">Subject</label>
+                            <label htmlFor="subject">Objet</label>
                             <input
                                 type="text"
                                 id="subject"
@@ -96,9 +97,9 @@ const ContactForm = () => {
                         </div>
                         <button
                             type="submit"
-                            className="bg-black text-white px-4 py-2 rounded-full"
+                            className="bg-black text-white px-4 py-2 rounded-full my-4"
                         >
-                            Send Message
+                            Envoyer message
                         </button>
                     </form>
                     <div className="w-1/2 flex justify-end px-32">
@@ -107,16 +108,15 @@ const ContactForm = () => {
                 </section>
                 <div className="flex flex-row justify-around px-6 mx-64 my-32 py-32 bg-[#f0f0f0]">
                     <div>
-                        <h3 className="text-3xl">Call us</h3>
+                        <h3 className="text-3xl">Telephone</h3>
                         <p>+33 00 00 00 00</p>
                     </div>
                     <div>
-                        <h3 className="text-3xl">Email us</h3>
-                        <p>info@example.com</p>
-                        <p>info@example.com</p>
+                        <h3 className="text-3xl">Email</h3>
+                        <p>contactagence200@gmail.com</p>
                     </div>
                     <div>
-                        <h3 className="text-3xl">Visit Us</h3>
+                        <h3 className="text-3xl">Locaux</h3>
                         <p>200 Agency</p>
                     </div>
                 </div>
