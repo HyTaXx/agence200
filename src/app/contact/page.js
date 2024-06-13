@@ -28,16 +28,16 @@ const ContactForm = () => {
             <Header />
             <section className="flex flex-col justify-center pb-16">
                 <div className="flex flex-col justify-center py-16 gap-4">
-                    <h2 className="text-center text-3xl">Contact us</h2>
+                    <h2 className="text-center text-3xl">Nous contacter</h2>
                     <p className="text-center">
-                        Get in touch with us. We're ready to help you find the
-                        best cybersecurity solutions.
+                        Rentrez en contact avec nous ! Nous sommes pret à vous
+                        aider et trouver les meilleurs solutions cybersécurités
                     </p>
                 </div>
                 <section className="flex flex-row px-32">
                     <form className="w-1/2 px-32 flex flex-col justify-around">
                         <div className="flex flex-col gap-2">
-                            <label htmlFor="name">Your Name</label>
+                            <label htmlFor="name">Votre Nom et prénom</label>
                             <input
                                 type="text"
                                 id="name"
@@ -45,11 +45,11 @@ const ContactForm = () => {
                                 value={formData.name}
                                 onChange={handleChange}
                                 className="border-2 rounded-full border-black px-4 py-2"
-                                placeholder="Full Name"
+                                placeholder="Nom complet"
                             />
                         </div>
                         <div className="flex flex-col gap-2">
-                            <label htmlFor="email">Your Email</label>
+                            <label htmlFor="email">Votre Email</label>
                             <input
                                 type="email"
                                 id="email"
@@ -57,11 +57,11 @@ const ContactForm = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 className="border-2 rounded-full border-black px-4 py-2"
-                                placeholder="youremail@example.com"
+                                placeholder="emaivotrel@exemple.com"
                             />
                         </div>
                         <div className="flex flex-col gap-2">
-                            <label htmlFor="subject">Subject</label>
+                            <label htmlFor="subject">Votre sujet</label>
                             <input
                                 type="text"
                                 id="subject"
@@ -69,7 +69,7 @@ const ContactForm = () => {
                                 value={formData.subject}
                                 onChange={handleChange}
                                 className="border-2 rounded-full border-black px-4 py-2"
-                                placeholder="Telll us more about your needs"
+                                placeholder="Dites nous en plus sur vos besoins"
                             />
                         </div>
                         <div className="flex flex-col gap-2">
@@ -80,7 +80,7 @@ const ContactForm = () => {
                                 value={formData.message}
                                 onChange={handleChange}
                                 className="border-2 rounded-full border-black px-4 py-2"
-                                placeholder="Write your message here"
+                                placeholder="Ecrivez votre message ici"
                             />
                         </div>
                         <button
@@ -88,7 +88,7 @@ const ContactForm = () => {
                             onClick={handleSubmit}
                             className="bg-black text-white px-4 py-2 rounded-full"
                         >
-                            Send Message
+                            Envoyer un message
                         </button>
                     </form>
                     <div className="w-1/2 flex justify-end px-32">
@@ -97,16 +97,16 @@ const ContactForm = () => {
                 </section>
                 <div className="flex flex-row justify-around px-6 mx-64 my-32 py-32 bg-[#f0f0f0]">
                     <div>
-                        <h3 className="text-3xl">Call us</h3>
-                        <p>+33 00 00 00 00</p>
+                        <h3 className="text-3xl">Appelez nous</h3>
+                        <p>+33 7 82 58 81 24</p>
                     </div>
                     <div>
-                        <h3 className="text-3xl">Email us</h3>
-                        <p>info@example.com</p>
-                        <p>info@example.com</p>
+                        <h3 className="text-3xl">Email</h3>
+                        <p>agence200@gmail.com</p>
+                        <p>agence200@gmail.com</p>
                     </div>
                     <div>
-                        <h3 className="text-3xl">Visit Us</h3>
+                        <h3 className="text-3xl">Nous visiter</h3>
                         <p>200 Agency</p>
                     </div>
                 </div>
