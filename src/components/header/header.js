@@ -49,7 +49,7 @@ export const Header = () => {
             </div>
             <div>
                 <a
-                    href="#"
+                    href="/contact"
                     className="bg-[#EB5E28] rounded-full px-4 py-3 hidden md:block"
                 >
                     Nous contacter
